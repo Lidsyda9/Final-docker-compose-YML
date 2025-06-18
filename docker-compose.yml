@@ -1,38 +1,35 @@
 version: '3.8'
-
 services:
-  master1:
-    image: mariadb:11.4
-    container_name: master1
-    restart: always
-    environment:
-      - MYSQL_ROOT_PASSWORD=root123
-    networks:
-      - dbnet
-
-  master2:
-    image: mariadb:11.4
-    container_name: master2
-    restart: always
-    environment:
-      - MYSQL_ROOT_PASSWORD=root123
-    networks:
-      - dbnet
-
   maxscale:
     image: mariadb/maxscale:latest
     container_name: maxscale
     ports:
-      - "4000:4000"
-      - "8989:8989"
+"3306:3306"  # Connect to Maxscale from host
+    environment:
+      MAXSCALE_PASSWORD: maxscale_password
     volumes:
-      - ./maxscale.cnf:/etc/maxscale.cnf
+./maxscale.cnf:/etc/maxscale.cnf:ro
     depends_on:
-      - master1
-      - master2
-    networks:
-      - dbnet
-
-networks:
-  dbnet:
-    driver: bridge
+master1
+master2
+  master1:
+    image: mariadb:latest
+    container_name: master1
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: masterdb1
+    ports:
+"3307:3306"
+    volumes:
+./init-master1.sql:/docker-entrypoint-initdb.d/init.sql
+  master2:
+    image: mariadb:latest
+    container_name: master2
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: masterdb2
+    ports:
+"3308:3306"
+    volumes:
+./init-master2.sql:/docker-entrypoint-initdb.d/init.sql
+```
