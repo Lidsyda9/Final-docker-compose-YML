@@ -1,41 +1,38 @@
 version: '3.8'
 
 services:
+  master1:
+    image: mariadb:11.4
+    container_name: master1
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=root123
+    networks:
+      - dbnet
+
+  master2:
+    image: mariadb:11.4
+    container_name: master2
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=root123
+    networks:
+      - dbnet
+
   maxscale:
     image: mariadb/maxscale:latest
     container_name: maxscale
     ports:
-      - "4000:4000"   # SQL clients connect here
-      - "8989:8989"   # MaxScale admin UI
-    environment:
-      MAXSCALE_USER: admin
-      MAXSCALE_PASSWORD: admin123
+      - "4000:4000"
+      - "8989:8989"
     volumes:
       - ./maxscale.cnf:/etc/maxscale.cnf
     depends_on:
       - master1
       - master2
+    networks:
+      - dbnet
 
-  master1:
-    image: mariadb:10.6
-    container_name: master1
-    environment:
-      MYSQL_ROOT_PASSWORD: root123
-      MYSQL_DATABASE: app_db
-      MYSQL_USER: user1
-      MYSQL_PASSWORD: pass1
-    ports:
-      - "3307:3306"
-    command: --server-id=1 --log-bin=mysql-bin --binlog-format=row
-
-  master2:
-    image: mariadb:10.6
-    container_name: master2
-    environment:
-      MYSQL_ROOT_PASSWORD: root123
-      MYSQL_DATABASE: app_db
-      MYSQL_USER: user2
-      MYSQL_PASSWORD: pass2
-    ports:
-      - "3308:3306"
-    command: --server-id=2 --log-bin=mysql-bin --binlog-format=row
+networks:
+  dbnet:
+    driver: bridge
