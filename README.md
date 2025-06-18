@@ -56,3 +56,22 @@ A MaxScale instance exposing ports:
 `4000`: SQL client access
 
 `8989`: MaxScale admin interface
+🔐 Step 3: Create MaxScale Monitoring User in Both Masters
+On master1:
+
+`bash
+docker exec -it master1 mysql -uroot -proot123`
+
+`sql
+
+CREATE USER 'maxscale'@'%' IDENTIFIED BY 'maxscale123';
+GRANT ALL PRIVILEGES ON *.* TO 'maxscale'@'%' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+EXIT;'
+
+On master2:
+
+`bash
+docker exec -it master2 mysql -uroot -proot123`
+
+Repeat the same SQL commands.
