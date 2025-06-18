@@ -19,6 +19,10 @@ Note, I followed [https://docs.docker.com/compose/intro/features-uses/) in build
 
 ## Technologies used
 
+- [MariaDB 11.4](https://hub.docker.com/_/mariadb)
+- [MariaDB MaxScale](https://mariadb.com/products/technology/maxscale/)
+- Docker & Docker Compose
+  
 
 Take a look at the [Installing Docker on Ubuntu Documentation](https://docs.docker.com/engine/install/ubuntu/).  Lubuntu is essentially a modified version of Ubuntu with less fancy graphics, so the same procedure for installing Docker on Ubuntu should work for Lubuntu.
 
