@@ -1,3 +1,5 @@
-![logo](https://www.bing.com/images/search?view=detailV2&ccid=8LDuqhm6&id=E8B7526E6B7514C94599ED1E0B393EA4DC2850BC&thid=OIP.8LDuqhm6WLzw-eIe6q6_ngAAAA&mediaurl=https%3A%2F%2Fimages.freeimages.com%2F365%2Fimages%2Fistock%2Fpreviews%2F9291%2F92917985-funny-octopus.jpg&exph=416&expw=416&form=IRPFED&ck=81651610BE4EE7BF57B1A06F0D100956&reqid=9AF9EE7942754409B3FCF8C3BB4CF817&selectedindex=20&itb=0&idpp=insfeed&simid=608028110241291343&cdnurl=https%3A%2F%2Fth.bing.com%2Fth%2Fid%2FR.f0b0eeaa19ba58bcf0f9e21eeaaebf9e%3Frik%3DvFAo3KQ%252bOQse7Q%26pid%3DImgRaw%26r%3D0&vt=0)
+![logo](https://mariadb.com/wp-content/uploads/2019/11/mariadb-logo_blue-transparent.png)
+
+![logo](file:///C:/Users/lidsy/Downloads/https___mariadb.com_wp-content_uploads_2019_11_vertical-logo_black.svg)
 
 # Final-docker-compose-YML
