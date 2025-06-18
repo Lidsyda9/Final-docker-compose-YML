@@ -1,9 +1,5 @@
 touch maxscale.cnf
-Paste this inside:
 
-ini
-Copy
-Edit
 [maxscale]
 threads=auto
 
