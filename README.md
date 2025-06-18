@@ -1,3 +1,3 @@
-![logo](https://img.stackshare.io/service/3136/docker-compose.png)
+![logo](https://products.containerize.com/devops/compose/header_image.png)
 
 # Final-docker-compose-YML
