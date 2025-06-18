@@ -23,13 +23,21 @@ Note, I followed [https://docs.docker.com/compose/intro/features-uses/) in build
 - [MariaDB MaxScale](https://mariadb.com/products/technology/maxscale/)
 - Docker & Docker Compose
 
+```
   ## 📁 Project Structure
 
 `Final-docker-compose-YML/
 ├── docker-compose.yml # Docker services for MariaDB and MaxScale
 ├── maxscale.cnf # MaxScale routing and monitoring config
-└── README.md # Project overview and setup instructions`
+└── README.md # Project overview and setup instructions
+```
 
+## 🚀 Setup Instructions
 
+### 1. Clone this Repository
+
+```bash
+git clone https://github.com/My_USERNAME/Final-docker-compose-YML.git
+cd Final-docker-compose-YML
 
 ```
