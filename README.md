@@ -64,10 +64,10 @@ docker exec -it master1 mysql -uroot -proot123`
 
 `sql
 
-CREATE USER 'maxscale'@'%' IDENTIFIED BY 'maxscale123';
+(CREATE USER 'maxscale'@'%' IDENTIFIED BY 'maxscale123';
 GRANT ALL PRIVILEGES ON *.* TO 'maxscale'@'%' WITH GRANT OPTION;
 FLUSH PRIVILEGES;
-EXIT;'
+EXIT;)'
 
 On master2:
 
