@@ -19,7 +19,7 @@ Note, I followed [https://docs.docker.com/compose/intro/features-uses/) in build
 
 ## Technologies used
 
-- [MariaDB 11.4](https://hub.docker.com/_/mariadb)
+- [MariaDB 11.4](https://mariadb.com/docs/maxscale/other-maxscale-versions/mariadb-maxscale-25/maxscale-25-tutorials/mariadb-maxscale-25-simple-sharding-with-two-servers)
 - [MariaDB MaxScale](https://mariadb.com/products/technology/maxscale/)
 - Docker & Docker Compose
   
