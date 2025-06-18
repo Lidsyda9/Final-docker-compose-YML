@@ -1,3 +1,3 @@
-![logo](https://www.freeimages.com/premium-vector/funny-octopus-6423176)
+![logo](16 × 416 jpeg)
 
 # Final-docker-compose-YML
