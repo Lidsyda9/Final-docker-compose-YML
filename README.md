@@ -25,29 +25,11 @@ Note, I followed [https://docs.docker.com/compose/intro/features-uses/) in build
 
   ## 📁 Project Structure
 
-Take a look at the [Installing Docker on Ubuntu Documentation](https://docs.docker.com/engine/install/ubuntu/).  Lubuntu is essentially a modified version of Ubuntu with less fancy graphics, so the same procedure for installing Docker on Ubuntu should work for Lubuntu.
+real-world-mariadb-maxscale/
+├── docker-compose.yml # Docker services for MariaDB and MaxScale
+├── maxscale.cnf # MaxScale routing and monitoring config
+└── README.md # Project overview and setup instructions
 
-Note the documentation states:
 
-> To install Docker Engine, you need the 64-bit version of one of these Ubuntu versions:
->    Ubuntu Groovy 20.10
->    Ubuntu Focal 20.04 (LTS)
->    Ubuntu Bionic 18.04 (LTS)
->    Ubuntu Xenial 16.04 (LTS)
-
-To check our underlying version of Ubuntu, we do:
-
-```
-~ : lsb_release -a
-No LSB modules are available.
-Distributor ID: Ubuntu
-Description:    Ubuntu 20.04.2 LTS
-Release:        20.04
-Codename:       focal
-```
-
-As we can see clearly above, Lubuntu "thinks," that it is Ubuntu 20.04, focal - so we should be good to go with Docker.
-
-Sure enough, attempting to install Docker yields:
 
 ```
