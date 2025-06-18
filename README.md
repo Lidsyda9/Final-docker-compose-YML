@@ -1,3 +1,3 @@
-![logo]([https://mariadb.com/wp-content/uploads/2019/11/mariadb-logo_blue-transparent.png](https://www.simplehomelab.com/udms-12-install-docker-and-docker-compose/)
+![logo](https://www.freeimages.com/premium-vector/funny-octopus-6423176)
 
 # Final-docker-compose-YML
