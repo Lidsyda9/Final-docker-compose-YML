@@ -39,5 +39,20 @@ Final-docker-compose-YML/
 ```bash
 git clone https://github.com/My_USERNAME/Final-docker-compose-YML.git
 cd Final-docker-compose-YML
+```
+## Start the Containers
 
 ```
+bash
+docker compose up -d
+```
+
+This brings up:
+
+`master1` and `master2` MariaDB instances with `root` password `root123`
+
+A MaxScale instance exposing ports:
+
+`4000`: SQL client access
+
+`8989`: MaxScale admin interface
