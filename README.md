@@ -9,13 +9,16 @@ The purpose of this repo is to test out Docker on Lubuntu. This project demonstr
 
 Note, I followed [https://docs.docker.com/compose/intro/features-uses/) in building the following demonstration.
 
-## What I did
+## Setup
 
 
 * I created **two database** (`master1`, `master2`) in my docker-compose.YML folder
 * I created **one Maxscale** that routes connections to these databases in my docker-compose.YML folder
+* Simple monitoring user and MaxScale configuration
+* Ideal for learning replication, sharding, and load balancing with MaxScale
 
-We're interested in just the regular docker engine, docker-cli.
+## Technologies used
+
 
 Take a look at the [Installing Docker on Ubuntu Documentation](https://docs.docker.com/engine/install/ubuntu/).  Lubuntu is essentially a modified version of Ubuntu with less fancy graphics, so the same procedure for installing Docker on Ubuntu should work for Lubuntu.
 
