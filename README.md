@@ -75,3 +75,28 @@ On master2:
 docker exec -it master2 mysql -uroot -proot123`
 
 Repeat the same SQL commands.
+⚙️ Step 4: MaxScale Configuration
+I Make sure that I have a file named maxscale.cnf in my root project directory. 
+
+✅ Status & Testing
+Check all containers are running:
+
+`docker ps`
+
+so no can test MaxScale routing by connecting to port 4000:
+
+bash
+Copy
+
+`mysql -h 127.0.0.1 -P 4000 -umaxscale -pmaxscale123`
+
+📚 Resources
+MariaDB MaxScale Docs
+
+MariaDB Docker Hub
+
+🧑‍💻 Author
+Created by Lidsyda
+GitHub: github.com/Lidsyda9
+
+
