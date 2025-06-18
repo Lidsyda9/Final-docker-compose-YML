@@ -5,7 +5,7 @@ Objective
 The purpose of this repo is to test out Docker on Lubuntu. This project demonstrates a docker environment with:
 *  **Maxscale** instance-a database load balancer (`maxscale`)
 * **Master Databases** (MariaDB/MySQL), each initialized with a specific table.
-* This setup is ideal for learning, testing, or developing database routing, high availability, or sharding solutions.
+  This setup is ideal for learning, testing, or developing database routing, high availability, or sharding solutions.
 
 Note, I followed [https://docs.docker.com/compose/intro/features-uses/) in building the following demonstration.
 
