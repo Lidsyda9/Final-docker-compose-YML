@@ -9,7 +9,7 @@ The purpose of this repo is to test out Docker on Lubuntu. This project demonstr
 
 Note, I followed [https://docs.docker.com/compose/intro/features-uses/) in building the following demonstration.
 
-## Setup
+## ⚙️Setup
 
 
 * I created **two database** (`master1`, `master2`) in my docker-compose.YML folder
@@ -17,7 +17,7 @@ Note, I followed [https://docs.docker.com/compose/intro/features-uses/) in build
 * Simple monitoring user and MaxScale configuration
 * Ideal for learning replication, sharding, and load balancing with MaxScale
 
-## Technologies used
+## 📦 Technologies used
 
 - [MariaDB 11.4](https://mariadb.com/docs/maxscale/other-maxscale-versions/mariadb-maxscale-25/maxscale-25-tutorials/mariadb-maxscale-25-simple-sharding-with-two-servers)
 - [MariaDB MaxScale](https://mariadb.com/products/technology/maxscale/)
