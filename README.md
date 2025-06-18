@@ -22,7 +22,8 @@ Note, I followed [https://docs.docker.com/compose/intro/features-uses/) in build
 - [MariaDB 11.4](https://mariadb.com/docs/maxscale/other-maxscale-versions/mariadb-maxscale-25/maxscale-25-tutorials/mariadb-maxscale-25-simple-sharding-with-two-servers)
 - [MariaDB MaxScale](https://mariadb.com/products/technology/maxscale/)
 - Docker & Docker Compose
-  
+
+  ## 📁 Project Structure
 
 Take a look at the [Installing Docker on Ubuntu Documentation](https://docs.docker.com/engine/install/ubuntu/).  Lubuntu is essentially a modified version of Ubuntu with less fancy graphics, so the same procedure for installing Docker on Ubuntu should work for Lubuntu.
 
