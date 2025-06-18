@@ -9,14 +9,11 @@ The purpose of this repo is to test out Docker on Lubuntu. This project demonstr
 
 Note, I followed [https://docs.docker.com/compose/intro/features-uses/) in building the following demonstration.
 
-## Setup
+## What I did
 
-### Install Docker and Docker Compose on Lubuntu
 
-This project sets up a test environment using Docker Compose with:
-
-* I created tow  MariaDB master nodes (`master1`, `master2`)
-* docker-cli is used when managing individual containers.
+* I created **two database** (`master1`, `master2`) in my docker-compose.YML folder
+* I created **one Maxscale** that routes connections to these databases in my docker-compose.YML folder
 
 We're interested in just the regular docker engine, docker-cli.
 
